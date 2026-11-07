@@ -338,7 +338,7 @@
                 posts.forEach((post, index) => {
                     const coverHtml = post.cover 
                         ? `<img src="${post.cover}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-t-2xl" alt="${post.title}">`
-                        : `<div class="w-full h-full bg-gradient-to-tr ${getGradient(index)} flex items-center justify-center text-white/10 font-bold text-3xl select-none rounded-t-2xl">Halo</div>`;
+                        : `<div class="w-full h-full bg-gradient-to-tr ${getGradient(index)} flex items-center justify-center text-white/10 font-bold text-3xl select-none rounded-t-2xl">HaLo</div>`;
 
                     const summaryHtml = (globalLayoutMode !== 'simple')
                         ? `<p class="text-zinc-500 text-xs leading-relaxed line-clamp-2">${post.summary}</p>`

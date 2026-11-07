@@ -168,11 +168,11 @@
                 if (!res.ok) throw new Error();
                 const data = await res.json();
                 
-                const title = data.site_title || "Blogs.nyc.mn";
-                const subtitle = data.site_subtitle || "无服务器数字花园";
-                activeCategories = JSON.parse(data.site_categories || '["技术","教程","随笔","思考"]');
-                activeSeriesList = JSON.parse(data.site_series || '["科学上网","谷歌系列","NAS系列"]');
-                const rawNavLinks = JSON.parse(data.site_nav_links || '[{"name": "订阅转换", "url": "https://sub.blogs.nyc.mn"}]');
+                const title = data.site_title || "Halo.xi.to";
+                const subtitle = data.site_subtitle || "数字花园";
+                activeCategories = JSON.parse(data.site_categories || '["随笔","思考","影像"]');
+                activeSeriesList = JSON.parse(data.site_series || '["日常","资源","备忘"]');
+                const rawNavLinks = JSON.parse(data.site_nav_links || '[{"name": "HaLo", "url": "https://Halo.xi.to"}]');
                 globalLayoutMode = data.site_layout_mode || "standard";
                 
                 globalPopularLimit = parseInt(data.site_popular_limit) || 5;
